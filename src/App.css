@@ -1,38 +1,111 @@
-.App {
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: 'Lato';
+}
+
+html body {
+  margin: 0;
+}
+
+#headerLeft{
+  border: 1px solid red;
+  width: 5vw;
+  height: 85vh;
+  display: flex;
   text-align: center;
+  justify-content:start;
+  flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#headerLeft .fa{
+  padding-top: 4.5rem;
+  font-size: 1.4rem !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container{
+  border: 1px solid red;
+  display: flex;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.containerAnteprima{
+  background-color: #575757;
+  border: 1px solid red;
+  height: 20rem;
+  display: flex;
+}
+
+.textAlbum{
+  width: 80vw;
+  border: 1px solid red;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#imgAlbum{
+  width: 15rem;
+  height: 15rem;
+  margin: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.containerComandi{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  border: 1px solid red;
+}
+
+.containerComandi span{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border: 1px solid red;
+  margin-top: 6rem;
+}
+
+.containerApp{
+  width: 95vw;
+  display: flex;
+  flex-direction: column;
+}
+
+#trackRow, #trackRow2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem;
+}
+
+#trackRow2{
+  font-weight: bold;
+}
+
+#trackRow p{
+  width: 15%;
+}
+
+#trackRow2 p{
+  width: 15%;
+}
+
+.buttonImp{
+  background-color: transparent;
+  border-radius: 25px;
+  padding: 0 2rem;
+  height: 2rem;
+  border: 1px solid #575757;
+  font-size: 1rem;
+}
+
+.evidenziato{
+  background-color: #d6d6d6;
+}
+
+.buttonImp2{
+  padding: 0 2rem;
+  border: 1px solid #575757;
+  font-size: 1rem;
+  opacity: 0;
 }
