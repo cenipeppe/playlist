@@ -1,17 +1,8 @@
-import {useState} from 'react';
-import playList from '../playlist';
 import Comandi from './Comandi';
 
 
 
 function Anteprima(props){
-    
-    // function handleAnteprima(){
-    //     setAnteprima(props.parametro)
-    //     console.log(anteprima);
-    // }
-    
-    // const [anteprima, setAnteprima] = useState(props.parametro)
     
     const {id, title, artist, minutes, album, year, imgUrl} = props.parametro
     return(
@@ -23,7 +14,6 @@ function Anteprima(props){
                 <p id="album">{album}</p>
                 <Comandi />
             </div>
-            {/* <button onClick={handleAnteprima}>ciaociaoaooaoaoaa</button> */}
         </div>
     )
 }

@@ -2,18 +2,13 @@ import { useState } from "react";
 import playList from "../playlist";
 import Anteprima from './Anteprima';
 
-function Table() {
+
+function Table(props) {
+
+  // const [table, setTable] = useState(props.traccia);
   
-  function handleClick(e) {
-    setTable(playList[e.target.value]);
-    console.log(playList[e.target.value]);
-  }
-
-  const [table, setTable] = useState(playList[0]);
-
   return (
-    <div className="containerApp">
-      <Anteprima parametro={table} />
+    
       <div id="containerTable">
         <div id="trackRow2">
           <p>#</p>
@@ -33,16 +28,20 @@ function Table() {
               <p>{minutes}</p>
               <button
                 className="buttonImp"
-                value={id - 1}
-                onClick={(handleClick)}>
-                impostazioni
+                onClick={()=> {
+                  // setTable(track);
+                  props.statoApp(track)
+                }}
+              >
+                Play
               </button>
             </div>
           );
         })}
       </div>
-    </div>
+      
   );
+  
 }
 
 export default Table;

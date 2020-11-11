@@ -1,8 +1,6 @@
-import playList from '../playlist';
+function Controls(props){
 
-function Controls(){
-
-    const {id, title, artist, minutes, album, year, imgUrl} = playList[0];
+    const {title, artist, year, imgUrl} = props.traccia;
     return(
         <div className="containerControls">
             <img id="imgAlbumControls" src={imgUrl} alt="" />
