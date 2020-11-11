@@ -9,7 +9,7 @@ html body {
 }
 
 #headerLeft{
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 5vw;
   height: 85vh;
   display: flex;
@@ -24,20 +24,20 @@ html body {
 }
 
 .container{
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
 }
 
 .containerAnteprima{
   background-color: #575757;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   height: 20rem;
   display: flex;
 }
 
 .textAlbum{
   width: 80vw;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
   color: white;
@@ -53,14 +53,14 @@ html body {
   display: flex;
   align-items: center;
   flex-direction: row;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .containerComandi span{
   display: flex;
   align-items: center;
   text-align: center;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin-top: 6rem;
 }
 

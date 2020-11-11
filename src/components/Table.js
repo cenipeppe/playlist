@@ -1,11 +1,7 @@
-import { useState } from "react";
 import playList from "../playlist";
-import Anteprima from './Anteprima';
 
 
 function Table(props) {
-
-  // const [table, setTable] = useState(props.traccia);
   
   return (
     
@@ -21,8 +17,9 @@ function Table(props) {
         {playList.map((track) => {
           const { id, title, artist, minutes, album, year, imgUrl } = track;
           return (
-            <div id="trackRow" className={id % 2 && "evidenziato"}>
-              <p>{id}</p>
+            <div key={id} id="trackRow" className={!(id % 2) && "evidenziato"} 
+            style={props.traccia == id ? {backgroundColor: 'red'} : {}}>
+              <p>{id + 1}</p>
               <p>{title}</p>
               <p>{artist}</p>
               <p>{minutes}</p>
@@ -30,16 +27,15 @@ function Table(props) {
                 className="buttonImp"
                 onClick={()=> {
                   // setTable(track);
-                  props.statoApp(track)
+                  props.statoApp(id)
                 }}
               >
-                Play
+                {props.traccia == id ? 'Pause' : 'Play'}
               </button>
             </div>
           );
         })}
       </div>
-      
   );
   
 }

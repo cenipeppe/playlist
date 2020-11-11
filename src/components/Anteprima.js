@@ -1,10 +1,11 @@
 import Comandi from './Comandi';
+import playList from '../playlist'
 
 
 
 function Anteprima(props){
     
-    const {id, title, artist, minutes, album, year, imgUrl} = props.parametro
+    const {id, title, artist, minutes, album, year, imgUrl} = playList[props.parametro]
     return(
         <div className="containerAnteprima">
             <img id="imgAlbum" src={imgUrl} alt="" />
