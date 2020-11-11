@@ -109,3 +109,30 @@ html body {
   font-size: 1rem;
   opacity: 0;
 }
+
+.containerControls{
+  border: 1px solid grey;
+  display: flex;
+  flex-direction: row;
+  background-color: lightblue;
+}
+
+#imgAlbumControls{
+  width: 5rem;
+  height: 5rem;
+  padding: 1rem;
+}
+
+.controlsTitle{
+  padding: 0 3rem;
+}
+
+.arrows{
+  position: absolute;
+  right: 20rem;
+  font-size: 2rem;
+}
+
+.arrows i{
+  
+}

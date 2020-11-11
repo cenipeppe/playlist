@@ -6,14 +6,14 @@ import Comandi from './Comandi';
 
 function Anteprima(props){
     
-    function handleAnteprima(){
-        setAnteprima(props.parametro)
-        console.log(anteprima);
-    }
+    // function handleAnteprima(){
+    //     setAnteprima(props.parametro)
+    //     console.log(anteprima);
+    // }
     
-    const [anteprima, setAnteprima] = useState(playList[0])
+    // const [anteprima, setAnteprima] = useState(props.parametro)
     
-    const {title, artist, minutes, album, year, imgUrl} = anteprima
+    const {id, title, artist, minutes, album, year, imgUrl} = props.parametro
     return(
         <div className="containerAnteprima">
             <img id="imgAlbum" src={imgUrl} alt="" />
@@ -23,7 +23,7 @@ function Anteprima(props){
                 <p id="album">{album}</p>
                 <Comandi />
             </div>
-            <button onClick={handleAnteprima}>ciaociaoaooaoaoaa</button>
+            {/* <button onClick={handleAnteprima}>ciaociaoaooaoaoaa</button> */}
         </div>
     )
 }

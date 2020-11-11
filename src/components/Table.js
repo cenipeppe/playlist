@@ -3,6 +3,7 @@ import playList from "../playlist";
 import Anteprima from './Anteprima';
 
 function Table() {
+  
   function handleClick(e) {
     setTable(playList[e.target.value]);
     console.log(playList[e.target.value]);
@@ -33,8 +34,7 @@ function Table() {
               <button
                 className="buttonImp"
                 value={id - 1}
-                onClick={handleClick}
-              >
+                onClick={(handleClick)}>
                 impostazioni
               </button>
             </div>
