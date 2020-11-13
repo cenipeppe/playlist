@@ -89,7 +89,7 @@ const playList = [
         album: "Nuntereggae Più",
         year: 1978,
         imgUrl: "https://a6p8a2b3.stackpathcdn.com/SuM9TSKPkPg4rZo2tchxsxO_5J4=/500x500/smart/rockol-img/img/foto/upload/nuntereggae-piu-rino-gaetano-cover-ts1519137006.jpeg"
-    }
+    },
   ]
 
   export default playList;

@@ -18,7 +18,7 @@ function Table(props) {
           const { id, title, artist, minutes, album, year, imgUrl } = track;
           return (
             <div key={id} id="trackRow" className={!(id % 2) && "evidenziato"} 
-            style={props.traccia == id ? {backgroundColor: 'red'} : {}}>
+            style={props.traccia == id ? {backgroundColor: 'black', color:'white'} : {}}>
               <p>{id + 1}</p>
               <p>{title}</p>
               <p>{artist}</p>
@@ -28,9 +28,11 @@ function Table(props) {
                 onClick={()=> {
                   // setTable(track);
                   props.statoApp(id)
-                }}
+                }
+              }
+                style={props.traccia == id ? {color: 'white' } : {}}
               >
-                {props.traccia == id ? 'Pause' : 'Play'}
+                {props.traccia == id ? 'Traccia Corrente' : 'Seleziona Traccia'}
               </button>
             </div>
           );
